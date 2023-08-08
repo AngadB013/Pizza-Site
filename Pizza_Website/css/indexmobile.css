@@ -1,0 +1,195 @@
+nav{
+   
+    background-image: url("../images/1078503.jpg");
+	/*Wallpaperup.com, viewed on 27 April 2021, https://www.wallpaperup.com/179369/mushroom_Pizza_u.html*/ 
+}
+
+
+ul{
+	
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size:18px;
+	font-weight:bold;
+}
+
+/*contextual */
+ul li{
+  
+	display:inline-block;
+}
+
+ul li a{
+	
+	border:2px solid yellow;
+	transition:0.6s ease;
+}
+
+/*pseudo-classes*/
+ul li a:hover{
+	
+	text-decoration:underline;
+	background-color:#fff;
+	color:#000;
+}
+
+.container{
+	
+	position:absolute;
+	top:45%;
+	left:34%;	
+}
+
+.container h1{
+	
+	font-family:Georgia, serif;
+	color:yellow;
+	font-size:60px;
+}
+
+#ie{
+
+	text-align:center;
+	font-family:Georgia, serif;
+    color: black;
+	font-size:40px;
+    margin-bottom:20px;	
+}
+
+#right{
+	
+	height:850px;
+	border-width: 5px;
+	border-style: solid;	
+	border-color:red;   
+}
+
+.righthead{
+	
+	font-family: Comic Sans, Comic Sans MS, cursive; 
+}
+
+#table {
+	
+	margin-top:5px;
+    font-family:Comic Sans, Comic Sans MS, cursive; 	
+}
+
+th{
+	
+	background-color:#FF7F50;
+}
+
+td, th {
+
+    border: 1px solid black;
+    text-align: center;
+    padding:5px;
+}
+
+.submenu{
+		
+	text-align:center;
+}
+
+.price{
+	
+	font-size:25px;
+}
+
+.card1 {
+	
+	margin:18px;
+	display:inline-block;
+	width:70%;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    font-family: Comic Sans, Comic Sans MS, cursive;;
+}
+
+.submenu2{
+	
+	text-align:center;
+}
+
+.card2{
+	
+	margin:18px;
+	display:inline-block;
+	width:70%;
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    font-family: Comic Sans, Comic Sans MS, cursive;;
+}
+
+#head{
+	
+	text-align:center;
+	padding:40px;
+	font-family:Georgia, serif;
+    color: black;
+	font-size:40px;       
+}
+
+h2{
+	
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	color:black;
+	text-align:center;
+	padding-top:8px;
+}
+
+
+.part1{
+  
+	border-width: 5px;
+	border-radius: 30px;
+	border-style: solid;	
+	border-color:red;
+	width:89%;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+	color:black;
+    padding-left:12px;
+	padding-bottom:10px;
+}
+
+.part2{
+	
+	border-width: 5px;
+	border-radius: 30px;
+	border-collapse: collapse;
+	border-style: solid;	
+	border-color:red;
+	width:89%;
+    font-family:Comic Sans, Comic Sans MS, cursive;
+	color:black;
+	padding-top:10px;
+    padding-left:38px;
+	padding-bottom:10px;
+}
+
+#footer {
+	
+    margin-top:20px;
+    height:450px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.partfoot1{
+	
+	padding-left:10px;
+}
+
+.parafooter{
+	
+    font-size: 25px;	
+}
+
+/*GROUPING*/
+h1, h2{
+	
+	color: white;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    text-decoration: none;
+}
