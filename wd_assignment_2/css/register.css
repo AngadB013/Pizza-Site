@@ -1,0 +1,151 @@
+*{	
+
+    margin:0;
+    padding:0;
+}
+
+.logo{
+	
+	float:right;
+	display:inline-block;
+	padding-right:34px;
+	font-size:45px;
+	color:yellow;
+}
+
+.main{
+	
+	padding-top:30px;
+	padding-left:25px;
+	background-color: #D0D0D0;
+    width: 100%;
+    position: fixed;  
+}
+
+ul{
+	
+	font-size:25px;	
+}
+
+ul li{
+	
+	display:inline-block;
+}
+
+ul li a{
+	
+	
+	color:black;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	padding:10px 20px;
+	border:2px solid #fff;
+	transition:0.6s ease;
+}
+
+/*pseudo-classes*/
+ul li a:hover{
+	
+	background-color:#fff;
+	color:#000;
+}
+
+.current{
+	
+	background-color:red;
+}
+
+.container {  
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    padding:120px;
+    background-color: PINK;
+}  
+  
+input[type=text], input[type=password], textarea { 
+  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: white;  
+}  
+
+input[type=text]:focus, input[type=password]:focus { 
+
+    background-color: orange;    
+}  
+
+div {  
+    
+	padding: 10px 0;  
+} 
+  
+hr {
+	
+   border: 1px solid white;  
+   margin-bottom: 25px;  
+}  
+
+.registerbtn {  
+
+   background-color: #4CAF50;  
+   color: white;  
+   padding: 16px 20px;  
+   margin: 8px 0;  
+   border: none;  
+   cursor: pointer;  
+   width: 100%;  
+   opacity: 0.9;  
+}  
+
+.registerbtn:hover { 
+
+   opacity: 1;  
+}  
+
+.resetbtn {  
+
+   background-color: #4CAF50;  
+   color: white;  
+   padding: 16px 20px;  
+   margin: 8px 0;  
+   border: none;  
+   cursor: pointer;  
+   width: 100%;  
+   opacity: 0.9;  
+}  
+
+.resetbtn:hover {  
+
+   opacity: 1;  
+}  
+
+/*CUSTOM SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: brown;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: yellow;
+}
+
+@media only screen and (max-width: 624px) {
+	body {
+    background-color: lightblue;
+  }
+}
+
+

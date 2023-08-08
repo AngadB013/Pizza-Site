@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />	
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Registration Form" />
+	<meta name="author"      content="put your name here" />
+	
+	<link href="css/order.css" rel="stylesheet" type="text/css"/>
+	<link href="css/ordermobile.css" rel="stylesheet"  media="screen and (max-width:710px)" type="text/css"/>
+	<script src="js/order.js"></script>
+	<title>Bruno Pizzeria</title>
+	
+</head>
+<body>
+
+<!--NAVIGATION-->
+<nav>
+
+	<div class="main">
+	<h1 class="logo">BRUNO PIZZERIA</h1>
+		<ul>
+		    <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+	        <li><a class="current" href="order.html">Order</a></li>
+	        <li><a href="features.html">Features</a></li>
+        </ul>
+	</div>	
+	
+</nav>
+	
+<!--FORM-->
+
+
+    <div class="container">  
+        <h1>CHECKOUT FORM</h1>
+    <hr/>  
+
+    <b>How would you like to order</b>
+    <br>
+	<br>
+	<!--LABEL-->
+        <label for="chkYes">
+		<!--DELIVERY ONLINE-->
+        <input type="radio" name="mode" value="delivery" id="chkYes" onclick="EnableDisableTextBox()">
+        DELIVERY
+        </label>
+        <label for="chkNo">
+		<!--DELIVERY OFFLINE-->
+        <input type="radio" name="mode" value="pickup" id="chkNo" onclick="EnableDisableTextBox()">
+        PICKUP
+        </label>
+    <br>
+	<br>
+	<!--DELIVERY ADDRESS-->
+    <label for ="shippingName"><b>Delivery Address:</b></label>
+    <input type = "text" name="delivery_address" disabled="disabled" placeholder="Delivery Address" id = "shippingName">
+	
+	<!--CHECKBOX-->
+	<input type="checkbox" id="same" onchange= "billingFunction()"/>
+    <label for = "same" >Same as Delivery Address?</label>
+	<br>
+	<!--BILLING ADDRESS-->
+    <label for ="billingName"><b>Billing Address:</b></label>
+    <input type = "text" name = "billaddress" placeholder="Billing Address" id = "billingName">
+
+    <br>
+	<!--CONTACT NUMBER-->
+    <label><b>Phone Number:</b></label>
+  	<input type="text" class="form-control" name="phone Number" placeholder="Phone Number" id= "phone" pattern="[1-9]{1}[0-9]{9}">
+	
+	<br>
+	<!--EMAIL-->
+	<label for="email"><b>Email</b></label>  
+    <input type="text" placeholder="Enter Email" name="email" id="email"> 
+   
+    <br>
+	
+<!--PAY ON PICKUP OR ONLINE-->
+<b>How would you like to pay:<br><i>Double tap below</i></b>
+<br>
+<input type="radio" value="PickUp" name="Payment Mode" onclick="toggle_visibility('pickup');"> Pickup
+<div id="pickup">Pay at the store</div>
+<input type="radio" value="Online" name="Payment Mode"  id="cr" onclick="toggle_visibility('expand');">Online
+<br>
+
+<div id="expand">
+<!--CREDIT CARD INFORMATION-->
+    <!--VISA CARD-->
+    <input type="radio" name="card" id="visa" onclick="toggle_visibility('credit');">Visa Card
+    <div id="credit">Visa Card Number:<input type="text" placeholder="Visa Card Number:" name="visa card" id="card1" maxlength="16"><br>
+    </div>
+    <!--MASTER CARD-->
+    <input type="radio" name="card" id="masters" onclick="toggle_visibility('master');">Master Card
+    <div id="master">Master Card Number<input type="text" placeholder="Master Card Number" name="master card" id="card2" maxlength="16"><br>
+    </div>
+    <!--AMERICAN EXPRESS CARD-->
+    <input type="radio" name="card" id="americancard" onclick="toggle_visibility('american');">American Express Card
+    <div id="american">American Express Card Number<input type="text" placeholder="American Express Card Number" name="american express card" id="card3" maxlength="15"><br>
+    </div>
+</div>
+
+<!--SUBMIT-->
+<button type="submit" class="registerbtn" value="register">Register</button>  
+<!--RESET-->
+<button type="reset" class="resetbtn">Reset</button>  
+	
+	</div>
+</form>
+</body>
+</html>
